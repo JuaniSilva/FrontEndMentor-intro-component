@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --neutral-dark-blue: hsl(249, 10%, 26%);
+  --neutral-greyish-blue: hsl(246, 25%, 77%);
+  --ff-main: "Poppins", sans-serif;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--primary-red);
+  background-image: url(images/bg-intro-mobile.png);
+  padding: 5.625rem 1.625rem 0;
+  font-family: var(--ff-main);
+}
+
+.wrapper{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex: 1;
+  color: #ffffff;
+}
+.wrapper__information{
+  text-align: center;
+  margin-bottom: 3.75rem;
+}
+.wrapper__information-heading{
+  margin-bottom: 1.875rem
+}
+.wrapper__form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.wrapper__free{
+  text-align: center;
+  background: var(--accent-blue);
+  padding: 1.25rem 4.5rem ;
+  border-radius: 0.8em;
+  line-height: 1.5;
+  margin-bottom: 1.56rem;
+}
+.wrapper__form{
+  background: #ffffff;
+  padding: 1.5625rem;
+  border-radius: 0.8em;
+}
+.wrapper__form input{
+  font-family: var(--ff-main);
+  border: 0.25px solid #E1E1E1;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: var(--neutral-dark-blue);
+  font-weight: 600;
+}
+.btn{
+  background: var(--primary-green);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 2.5rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.wrapper__form p{
+  text-align: center;
+  font-size: 0.75em;
+  color: var(--neutral-greyish-blue);
+}
+
+.terms a {
+  font-weight: 500;
+  color: var(--primary-red);
+  text-decoration: none;
+}
