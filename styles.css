@@ -54,11 +54,13 @@ body{
   line-height: 1.5;
   margin-bottom: 1.56rem;
   min-width: 100%;
+  box-shadow: 0 6px 1px 0 #0000002f;
 }
 .wrapper__form{
   background: #ffffff;
   padding: 1.5625rem;
   border-radius: 0.8em;
+  box-shadow: 0 6px 1px 0 #0000002f;
 }
 .wrapper__form input{
   font-family: var(--ff-main);
@@ -94,7 +96,7 @@ body{
 @media only screen and (min-width: 56.25rem){
   body{
     background-image: url("images/bg-intro-desktop.png");
-    padding: 7.5rem 12.5% 0;
+    padding: 3.9rem 12.5% 0;
   }
   .wrapper{
     flex-direction: row;
