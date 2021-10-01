@@ -34,16 +34,16 @@ body{
   margin-bottom: 3.75rem;
   flex: 1;
 }
-.wrapper__section{
-  flex: 1;
-}
 .wrapper__information-heading{
   margin-bottom: 1.875rem
+}
+.wrapper__section{
+  flex: 1;
 }
 .wrapper__form{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 100%;
 }
 .wrapper__free{
   display: inline-block;
@@ -93,7 +93,8 @@ body{
 
 @media only screen and (min-width: 56.25rem){
   body{
-    padding: 7.5rem 10% 0;
+    background-image: url("images/bg-intro-desktop.png");
+    padding: 7.5rem 12.5% 0;
   }
   .wrapper{
     flex-direction: row;
