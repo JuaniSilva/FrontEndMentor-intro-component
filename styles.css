@@ -26,12 +26,16 @@ body{
   display: flex;
   width: 100%;
   flex-direction: column;
-  flex: 1;
+  
   color: #ffffff;
 }
 .wrapper__information{
   text-align: center;
   margin-bottom: 3.75rem;
+  flex: 1;
+}
+.wrapper__section{
+  flex: 1;
 }
 .wrapper__information-heading{
   margin-bottom: 1.875rem
@@ -42,12 +46,14 @@ body{
   width: 100%;
 }
 .wrapper__free{
+  display: inline-block;
   text-align: center;
   background: var(--accent-blue);
   padding: 1.25rem 4.5rem ;
   border-radius: 0.8em;
   line-height: 1.5;
   margin-bottom: 1.56rem;
+  min-width: 100%;
 }
 .wrapper__form{
   background: #ffffff;
@@ -83,4 +89,28 @@ body{
   font-weight: 500;
   color: var(--primary-red);
   text-decoration: none;
+}
+
+@media only screen and (min-width: 56.25rem){
+  body{
+    padding: 7.5rem 10% 0;
+  }
+  .wrapper{
+    flex-direction: row;
+    width: 100%;
+    max-height: 100%;
+    margin-bottom: 2rem;
+  }
+  .wrapper__information{
+    text-align: left;
+    max-width: 37.5rem;
+    padding-right: 4.375rem;
+    margin: auto;
+  }
+  .wrapper__information-heading{
+    font-size: 3rem;
+  }
+  .wrapper__section{
+    width: 100%;
+  }
 }
