@@ -27,6 +27,10 @@
     </style>
   </head>
   <body>
+    <script
+      src="https://kit.fontawesome.com/4dbdbabd4c.js"
+      crossorigin="anonymous"
+    ></script>
     <div class="wrapper">
       <section class="wrapper__information">
         <h2 class="wrapper__information-heading">
@@ -41,17 +45,55 @@
       </section>
 
       <section class="wrapper__section">
-
         <span class="wrapper__free">
           <b>Try it free 7 days</b> then $20/mo. thereafter
         </span>
 
-        <form class="wrapper__form" action="">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="emial" placeholder="Email Address" />
-          <input type="password" placeholder="Password" />
-          <button class="btn" type="submit">Claim your free trial</button>
+        <form class="wrapper__form" id="form">
+          <div class="form-control">
+            
+            <input
+              class=""
+              type="text"
+              id="first-name"
+              placeholder="First Name"
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error</small>
+          </div>
+          <div class="form-control">
+            <input
+              class="space-top"
+              type="text"
+              id="last-name"
+              placeholder="Last Name"
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error</small>
+          </div>
+          <div class="form-control">
+            <input
+              class="space-top"
+              type="email"
+              id="email"
+              placeholder="Email Address"
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error</small>
+          </div>
+          <div class="form-control">
+            <input
+              class="space-top"
+              type="password"
+              id="password"
+              placeholder="Password"
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error</small>
+          </div>
+          <button class="btn space-top" type="submit">
+            Claim your free trial
+          </button>
           <p>
             By clicking the button, you are agreeing to our
             <span class="terms"><a href="">Terms and Services</a></span>
@@ -65,7 +107,8 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor.</a
-        > Coded by <a href="#">Juani C. Silva.</a>
+        >
+        Coded by <a href="#">Juani C. Silva.</a>
       </p>
     </footer>
     <script src="script.js"></script>

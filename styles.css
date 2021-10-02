@@ -21,7 +21,9 @@ body{
   padding: 5.625rem 1.625rem 0;
   font-family: var(--ff-main);
 }
-
+.space-top{
+  margin-top: 1rem;
+}
 .wrapper{
   display: flex;
   width: 100%;
@@ -53,6 +55,7 @@ body{
   border-radius: 0.8em;
   line-height: 1.5;
   margin-bottom: 1.56rem;
+  width: 100%;
   min-width: 100%;
   box-shadow: 0 6px 1px 0 #0000002f;
 }
@@ -62,12 +65,17 @@ body{
   border-radius: 0.8em;
   box-shadow: 0 6px 1px 0 #0000002f;
 }
+.form-control{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 100%;
+}
 .wrapper__form input{
   font-family: var(--ff-main);
   border: 0.25px solid #E1E1E1;
   border-radius: 5px;
   padding: 1rem;
-  margin-bottom: 1rem;
   color: var(--neutral-dark-blue);
   font-weight: 600;
 }
@@ -80,6 +88,11 @@ body{
   border-radius: 5px;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
+  box-shadow: 0 3px 1px 0 hsla(154, 59%, 51%, 0.541);
+  cursor: pointer;
+}
+.btn:hover{
+  opacity: 0.8;
 }
 .wrapper__form p{
   text-align: center;
@@ -91,6 +104,32 @@ body{
   font-weight: 500;
   color: var(--primary-red);
   text-decoration: none;
+}
+small{
+  color: var(--primary-red);
+  text-align: right;
+  font-style: italic;
+  font-size: 11px;
+}
+.wrapper__form input.error  {
+  border-color: var(--primary-red);
+}
+
+.fa-exclamation-circle {
+  font-size: 1.25rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 50%;
+  color: var(--primary-red);
+}
+.space-top + i{
+  bottom: 40%;
+}
+i, small {
+  visibility: hidden;
+}
+.visible{
+  visibility: visible;
 }
 
 @media only screen and (min-width: 56.25rem){
@@ -114,5 +153,8 @@ body{
   }
   .wrapper__section{
     width: 100%;
+  }
+  .wrapper__form{
+    padding: 2.5rem;
   }
 }
