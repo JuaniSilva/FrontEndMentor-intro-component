@@ -96,7 +96,7 @@ body{
 @media only screen and (min-width: 56.25rem){
   body{
     background-image: url("images/bg-intro-desktop.png");
-    padding: 3.9rem 12.5% 0;
+    padding: 7.5rem 12.5% 0;
   }
   .wrapper{
     flex-direction: row;
